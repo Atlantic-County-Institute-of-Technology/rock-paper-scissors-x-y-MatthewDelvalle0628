@@ -1,0 +1,23 @@
+ 
+body {background-color: violet;}
+
+#circle {
+    width: 150px;
+    height: 150px;
+    background: red;
+    border-radius: 50%
+  }
+
+  #circle {
+    width: 150px;
+    height: 150px;
+    background: limegreen;
+    border-radius: 50%
+  }
+
+  #circle {
+    width: 150px;
+    height: 150px;
+    background: darkblue;
+    border-radius: 50%
+  }
