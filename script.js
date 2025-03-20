@@ -5,12 +5,16 @@ var player2 = 0;
 
 var choices = ["rock", "paper", "scissors"];
 
-window.onload = function() {
-    for (let i = 0; 1 < 3; i++) {
-        // <img id="rock.jpeg">
-        let choice = document.createElement("img");
-        choices.id = choices[i];
-        choice.src - choices[i] + ".png";
-        document.getElementById("choices").append(choice);
+window.onload + function() {
+    for (let i = 0; i < 3; i++) {
+        //img id="rock"
     }
+}
+
+function selectChoice() {
+    you = this.id;
+    document.getElementById("your-choice").src = you + ".png";
+
+    //random for player2
+    player2 =  choices[ Math.floor(Math.random() * 3)]; //0- .999999 * 3 = 0-2.99999
 }
