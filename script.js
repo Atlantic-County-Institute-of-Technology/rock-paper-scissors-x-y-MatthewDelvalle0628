@@ -1,20 +1,33 @@
 var you;
+const rock = document.getElementById("rock");
+const paper = document.getElementById("paper");
+const scissors = document.getElementById("scissors");
+const userrock = document.getElementById("userrock")
+const userpaper = document.getElementById("userpaper")
+const userscissors = document.getElementById("userscissors")
 var player1 = 0;
 var opponent;
 var player2 = 0;
 
 var choices = ["rock", "paper", "scissors"];
 
-window.onload + function() {
-    for (let i = 0; i < 3; i++) {
-        //img id="rock"
-    }
+rock.addEventListener("click", playerrock)
+function playerrock (){
+    userrock.style.display = "block";
+    userpaper.style.display = "none";
+    userscissors.style.display = "none";
 }
 
-function selectChoice() {
-    you = this.id;
-    document.getElementById("your-choice").src = you + ".png";
+paper.addEventListener("click", playerpaper)
+function playerpaper (){
+    userrock.style.display = "none";
+    userpaper.style.display = "block";
+    userscissors.style.display = "none";
+}
 
-    //random for player2
-    player2 =  choices[ Math.floor(Math.random() * 3)]; //0- .999999 * 3 = 0-2.99999
+scissors.addEventListener("click", playerscissors)
+function playerscissors (){
+    userrock.style.display = "none";
+    userpaper.style.display = "none";
+    userscissors.style.display = "block";
 }

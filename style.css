@@ -7,6 +7,10 @@ body {
 
 }
 
+.your-choice{
+  margin: 0 auto 20px auto;
+}
+
 #opponent-choice {
   width: 240px;
   height: 240px;
@@ -32,4 +36,11 @@ body {
 #choices img {
   width: 77px;
   height: 77px;
+}
+
+
+#userrock, #userpaper, #userscissors {
+  display: none;
+  height: 100%;
+  width: 100%;
 }
