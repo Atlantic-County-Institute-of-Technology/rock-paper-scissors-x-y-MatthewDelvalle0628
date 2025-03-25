@@ -1,4 +1,5 @@
-var you;
+
+
 const rock = document.getElementById("rock");
 const paper = document.getElementById("paper");
 const scissors = document.getElementById("scissors");
@@ -31,3 +32,9 @@ function playerscissors (){
     userpaper.style.display = "none";
     userscissors.style.display = "block";
 }
+
+function
+
+
+
+
