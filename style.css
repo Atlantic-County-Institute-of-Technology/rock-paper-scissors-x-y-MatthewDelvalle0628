@@ -7,8 +7,12 @@ body {
 
 }
 
-.your-choice{
+.your-choice {
   margin: 0 auto 20px auto;
+}
+
+.cpu-choice{
+  margin: 0 auto;
 }
 
 #opponent-choice {
@@ -39,7 +43,7 @@ body {
 }
 
 
-#userrock, #userpaper, #userscissors {
+#userrock, #userpaper, #userscissors, #cpurock, #cpupaper, #cpuscissors {
   display: none;
   height: 100%;
   width: 100%;
