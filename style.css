@@ -43,9 +43,13 @@ body {
 }
 
 
-#userrock, #userpaper, #userscissors, #cpurock, #cpupaper, #cpuscissors {
+#userrock, #userpaper, #userscissors, #cpurock, #cpupaper, #cpuscissors, #usermarker {
   display: none;
   height: 100%;
   width: 100%;
+}
+
+#winner {
+  height: 100px;
 }
 

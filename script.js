@@ -9,11 +9,16 @@ const userscissors = document.getElementById("userscissors")
 const cpurock = document.getElementById("cpurock")
 const cpupaper = document.getElementById("cpupaper")
 const cpuscissors = document.getElementById("cpuscissors")
+const playerScore = document.getElementById("player1")
+const cpuScore = document.getElementById("player2")
+const winnerbanner = document.getElementById("winner")
 var player1 = 0;
 var opponent;
 var player2 = 0;
-let cpu = 0;
-let user = 0;
+let computerScore = 0;
+let userScore = 0;
+
+
 
 
 var choices = ["rock", "paper", "scissors"];
@@ -25,7 +30,7 @@ function playerrock (){
     userscissors.style.display = "none";
     user = 1;
     computerChoice();
-    winner();
+    winner(); 
 }
 
 paper.addEventListener("click", playerpaper)
@@ -70,7 +75,7 @@ function computerChoice(){
         cpuscissors.style.display = "block";
       
     }
-    console.log("cpu: " + cpu)
+    console.log("cpu: " + computerScore)
 }
 
 function winner() {
@@ -80,43 +85,15 @@ function winner() {
     else if ((user == 1 && cpu == 3) || (user == 2 && cpu == 1) || (user == 3 && cpu == 2))  {
         console.log ("Player WINS!")
         userScore++
+        console.log(userScore)
+        playerScore.innerHTML = userScore;
+        winnerbanner.innerHTML = "player wins!"
     }
     else {
         console.log ("CPU Wins!")
-        cpu++
+        computerScore++
+        cpuScore.innerHTML = computerScore;
+       winnerbanner.innerHTML = "computer wins!"
     }
 }
 
-// if (you == opponent) {
-//     yourScore += 1;
-//     opponentScore += 1;
-// }
-// else if (you == "rock") {
-//         if (opponent == "scissors") {
-//             yourScore += 1;
-//         }
-//         else if (opponet == "paper") {
-//             opponentScore += 1;
-//         }
-//     }
-
-// else if (you == "scissors") {
-//         if (opponent == "paper") {
-//             yourScore += 1;
-//         }
-//         else if (opponet == "rock") {
-//             opponentScore += 1;
-//         }
-//     }
-
-// else if (you == "paper") {
-//         if (opponent == "rock") {
-//             yourScore += 1;
-//         }
-//         else if (opponet == "scissors") {
-//             opponentScore += 1;
-//         }
-//     }
-
-
-// document.getElementById("your-score").innertext = opponentScore;
