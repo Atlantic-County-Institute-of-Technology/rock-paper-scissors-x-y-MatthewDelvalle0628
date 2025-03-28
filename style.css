@@ -30,7 +30,7 @@ body {
 }
 
 #choices {
-  width: 240px;
+  width: 401px;
   height: 80px;
   background-color: lightgreen;
   margin-top: 15px;
@@ -43,7 +43,7 @@ body {
 }
 
 
-#userrock, #userpaper, #userscissors, #cpurock, #cpupaper, #cpuscissors, #usermarker {
+#userrock, #cputrash, #userpen, #usertrash, #cpupen, #userpaper, #userscissors, #cpurock, #cpupaper, #cpuscissors {
   display: none;
   height: 100%;
   width: 100%;
